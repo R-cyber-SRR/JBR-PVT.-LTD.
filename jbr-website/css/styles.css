@@ -916,7 +916,7 @@ p {
 .social-link {
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #129a90;
     color: var(--white);
     display: flex;
     align-items: center;
