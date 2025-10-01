@@ -238,6 +238,10 @@ p {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    /* Ensure very long words like "JourneyBeyondResults" wrap on small screens */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .title-line {
@@ -961,8 +965,15 @@ p {
         display: flex;
     }
 
+    .hero {
+        /* Fit hero to the visible viewport minus fixed header height */
+        min-height: calc(100dvh - 80px);
+        padding: 40px 0 32px;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.1;
     }
 
     .page-title {
@@ -1018,8 +1029,14 @@ p {
         font-size: 2rem;
     }
 
+    .hero {
+        min-height: calc(100dvh - 80px);
+        padding: 36px 0 28px;
+    }
+
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.05;
     }
 
     .service-icon-large {
